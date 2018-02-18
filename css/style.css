@@ -55,12 +55,19 @@ p {
 }
 .feedback p {
     font-family: 'Merriweather';
+    padding: 20px;
+    color: #ffffff;
 }
 .feedback h3{
-    
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
 }
 .feedback h4{
-    
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    color: #ffffff;
 }
 .multilanguage h2{
     color: #ffffff;
@@ -119,10 +126,21 @@ section styles
 }
 .multilanguage{
     background-color: #1D47A8;
-    
+    padding-top: 250px;
+    padding-bottom: 250px;
 }
 .about img{
     
+}
+.how-to-play{
+    padding-bottom: 250px;
+}
+.about{
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+.box{
+    padding-top: 250px;
 }
 /*
 elements
@@ -215,6 +233,9 @@ elements
 }
 .multilanguage button svg{
     margin-left: 20px
+}
+.feedback img{
+    padding: 30px
 }
 
 
