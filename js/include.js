@@ -11,3 +11,5 @@ include("js/tether.min.js");
 include("js/bootstrap.bundle.min.js");
 //font-awesome
 include("js/fontawesome-all.min.js");
+//theme javascript
+include("js/script.js");
