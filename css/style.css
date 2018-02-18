@@ -1,0 +1,239 @@
+/* 
+navigation
+*/
+
+/* 
+text styles
+*/
+
+H1,
+H2,
+H3,
+H4,
+H5,
+H6 {
+    font-family: 'Gilroy';
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Gilroy';
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+.hero-text H1 {
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.hero-text H3 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.hero-text p {
+    color: #ffffff
+}
+.intro H1{
+    font-size: 80px;
+    color: #1F47A6;
+    padding-top: 100px;
+}
+.info H2{
+    color: #ffffff;
+    font-size: 64px;
+    text-align: center;
+    padding-top: 100px;
+}
+.info p{
+    color: #ffffff;
+}
+.how-to-play h1{
+    font-size: 80px;
+    color: #1F47A6;
+}
+.feedback p {
+    font-family: 'Merriweather';
+}
+.feedback h3{
+    
+}
+.feedback h4{
+    
+}
+.multilanguage h2{
+    color: #ffffff;
+    font-size: 64px;
+    text-align: center;
+}
+.multilanguage p{
+    color: #ffffff;
+}
+.about H2{
+    color: #1D439B;
+    font-size: 64px;
+}
+.about H3{
+    color: #1D439B;
+    font-size: 36px;
+    padding-top: 50px;
+}
+.about p{
+    color: #1D47A8;
+    font-size: 24px;
+    padding-top: 50px;
+}
+strong{
+    font-weight: bold; 
+}
+/*
+section styles 
+*/
+
+#hero {
+    height: 100vh;
+    width: 100%;
+    background-color: #1791FF;
+    text-align: left;
+}
+
+.hero-text {
+    padding-top: 150px
+}
+.intro{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+.info{
+    background-color: #1791FF;
+}
+.feedback {
+    background-color: #1791FF;
+    width: 80%;
+    margin: -200px 10%;
+    border-radius: 20px;
+    position: absolute;
+    height: 400px;
+}
+.multilanguage{
+    background-color: #1D47A8;
+    
+}
+.about img{
+    
+}
+/*
+elements
+*/
+
+.white-line {
+    border-top: 4px solid #ffffff;
+    height: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-round {
+    border-radius: 40px;
+}
+
+.hero-text .btn {
+    color: #ffffff;
+    font-family: 'Gilroy';
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #1791FF;
+    border-color: #ffffff;
+    border-width: 3px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn:hover {
+    background-color: #1D47A8;
+    border-color: #1791FF;
+}
+.intro .btn{
+    color: #ffffff;
+    font-family: 'Gilroy';
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #1791FF;
+    border-color: #ffffff;
+    border-width: 3px;
+    padding: 20px 30px 20px 80px;
+    margin-top: 120px;
+}
+.intro button svg{
+    margin-left: 50px
+}
+.intro .btn:hover{
+    background-color: #1F47A6;
+}
+
+.info .btn{
+    color: #ffffff;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1791FF;
+    border-color: #ffffff;
+    border-width: 3px;
+    width: 100%;
+    padding: 20px;
+    margin: 75px 0;
+}
+.info .btn:hover{
+    background-color: #1D47A8;
+    border-color: #1791FF;
+}
+.heading-pad{
+    padding-top: 100px
+}
+.multilanguage .btn{
+    color: #ffffff;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1791FF;
+    border-width: 3px;
+    border-color: #1791FF;
+    padding: 18px 0;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.multilanguage .btn:hover{
+    background-color: #1F47A6;
+    border-width: 3px;
+    border-color: #ffffff
+}
+.multilanguage button svg{
+    margin-left: 20px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
