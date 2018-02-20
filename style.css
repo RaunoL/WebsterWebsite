@@ -1,0 +1,509 @@
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+/*
+Navigation
+*/
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-top: 30px;
+    position: absolute;
+}
+
+ul li {
+    float: left;
+    padding: 8px;
+    font-family: 'Gilroy';
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+ul .active {
+    color: #1791FF;
+}
+
+/* 
+text styles
+*/
+
+H1,
+H2,
+H3,
+H4,
+H5,
+H6 {
+    font-family: 'Gilroy';
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Gilroy';
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+.hero-text H1 {
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.hero-text H3 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.hero-text p {
+    color: #ffffff
+}
+
+.intro H1 {
+    font-size: 80px;
+    color: #1F47A6;
+    padding-top: 100px;
+}
+
+.info H2 {
+    color: #ffffff;
+    font-size: 64px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.info p {
+    color: #ffffff;
+}
+
+.how-to-play h1 {
+    font-size: 80px;
+    color: #1F47A6;
+}
+
+.how-to-play H4 {
+    font-size: 48px;
+    color: #1F47A6;
+    text-align: center;
+}
+
+.how-to-play p {
+    text-align: center;
+}
+
+.feedback p {
+    font-family: 'Merriweather';
+    padding: 20px;
+    color: #ffffff;
+}
+
+.feedback h3 {
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.feedback h4 {
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    color: #ffffff;
+}
+
+.multilanguage h2 {
+    color: #ffffff;
+    font-size: 64px;
+    text-align: center;
+}
+
+.multilanguage p {
+    color: #ffffff;
+}
+
+.about H2 {
+    color: #1D439B;
+    font-size: 64px;
+}
+
+.about H3 {
+    color: #1D439B;
+    font-size: 36px;
+    padding-top: 50px;
+}
+
+.about p {
+    color: #1D47A8;
+    font-size: 24px;
+    padding-top: 50px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.box p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.box h1 {
+    text-align: center;
+    font-size: 64px;
+    color: #ffffff;
+    padding-bottom: 50px;
+}
+
+.box h3 {
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.data h2 {
+    color: #1791FF;
+    font-size: 64px;
+    padding-top: 200px;
+}
+
+.cart h2 {
+    color: #ffffff;
+    font-size: 64px;
+    padding-top: 200px;
+}
+
+/*
+section styles 
+*/
+
+#hero {
+    width: 100%;
+    background-color: #1791FF;
+    text-align: left;
+    padding-bottom: 100px;
+}
+
+.hero-text {}
+
+.intro {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.info {
+    background-color: #1791FF;
+}
+
+.feedback {
+    background-color: #1791FF;
+    width: 80%;
+    margin: -200px 10%;
+    border-radius: 20px;
+    position: absolute;
+    height: 400px;
+}
+
+.multilanguage {
+    background-color: #1D47A8;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.about img {}
+
+.how-to-play {}
+
+.about {
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.box {
+    padding-top: 250px;
+    background-color: #1D47A8;
+}
+
+.order {
+    height: 100vh;
+    width: 100%;
+    text-align: left;
+    background-image: url(img/orderBG.svg);
+}
+
+.gallery .col-md-6 {
+    padding: 0;
+}
+
+
+/*
+elements
+*/
+
+.hero-image {
+    margin-top: 200px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.white-line {
+    border-top: 4px solid #ffffff;
+    height: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.blue-line {
+    border-top: 2px solid #1791FF;
+    height: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-round {
+    border-radius: 40px;
+}
+
+.hero-text .btn {
+    color: #ffffff;
+    font-family: 'Gilroy';
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #1791FF;
+    border-color: #ffffff;
+    border-width: 3px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn:hover {
+    background-color: #1D47A8;
+    border-color: #1791FF;
+}
+
+.intro .btn {
+    color: #ffffff !important;
+    font-family: 'Gilroy';
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #1791FF;
+    padding: 20px 30px 20px 80px;
+    margin-top: 120px;
+}
+
+.intro a svg {
+    margin-left: 50px
+}
+
+.intro .btn:hover {
+    background-color: #1F47A6;
+}
+
+.info .btn {
+    color: #ffffff !important;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1791FF;
+    border-color: #ffffff;
+    border-width: 3px;
+    width: 100%;
+    padding: 20px;
+    margin: 75px 0;
+}
+
+.info .btn:hover {
+    background-color: #1D47A8;
+    border-color: #1791FF;
+}
+
+.info-image1 {
+    width: 70vh;
+    margin: -250px 0 0 -200px;
+}
+
+.info-image2 {
+    width: 70vh;
+    margin: -200px 0 0 0;
+}
+
+.info-image3 {
+    width: 70vh;
+    margin: 100px 0 0 -200px;
+}
+
+.info-image4 {
+    width: 70vh;
+    margin-top: 200px;
+}
+
+.heading-pad {
+    padding-top: 150px
+}
+
+.multilanguage .btn {
+    color: #ffffff !important;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1791FF;
+    border-width: 3px;
+    border-color: #1791FF;
+    padding: 18px 0;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.multilanguage .btn:hover {
+    background-color: #1F47A6;
+    border-width: 3px;
+    border-color: #ffffff
+}
+
+.multilanguage a svg {
+    margin-left: 20px
+}
+
+.feedback img {
+    padding: 30px
+}
+
+.box .btn {
+    color: #ffffff !important;
+    font-family: 'Gilroy';
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #1791FF;
+    border-width: 3px;
+    border-color: #1791FF;
+    padding: 18px 0;
+    width: 50%;
+    margin: 30px 25%;
+
+}
+
+.box a:hover {
+    background-color: #1F47A6;
+    border-width: 3px;
+    border-color: #ffffff
+}
+
+.box a svg {
+    margin-left: 20px
+}
+
+.multilang-eng {
+    width: 70vh;
+    margin-left: -300px;
+}
+
+.multilang-est {
+    width: 70vh;
+    margin-right: -300px;
+}
+
+/* Responsive stuff*/
+
+/* breakpoint 992px*/
+
+@media (max-width: 992px) {
+
+    .hero-buttons {
+        padding: 20px;
+
+    }
+    .hero-image {
+        margin: 0;
+        position: relative
+    }
+    .info-image2,
+    .info-image3,
+    .info-image4 {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    .info-image1 {
+        width: 100%;
+        height: auto;
+    }
+    .info p {
+        padding: 20px;
+    }
+    .info H2 {
+        padding: 0;
+    }
+    .info .btn {
+        width: 80%;
+        margin: 30px 10%;
+    }
+    .how-to-play H1 {
+        font-size: 48px;
+    }
+    .how-to-play h4 {
+        font-size: 36px;
+    }
+    .how-to-play p {
+        font-size: 20px;
+    }
+    .intro h1 {
+        font-size: 48px;
+    }
+    .multilang-eng {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .multilang-est {
+        width: 100%;
+        margin-right: 0px;
+    }
+    .multilanguage .btn {
+        width: 80%;
+        margin: 30px 10%
+    }
+    .multilanguage p {
+        padding: 20px;
+    }
+    .box .btn {
+        width: 90%;
+        margin: 30px 5%;
+        font-size: 18px;
+    }
+
+}
+
+/* breakpoint 768px*/
+
+@media (max-width: 768px) {
+    .hero-text H1 {
+        font-size: 48px;
+    }
+    .heading-pad {
+        padding-top: 50px;
+    }
+    .hero-buttons .btn {
+        font-size: 18px;
+    }
+    .hero-text h3 {
+        font-size: 24px;
+    }
+    .hero-buttons p {
+        font-size: 18px;
+    }
+    .intro h1 {
+        font-size: 30px;
+    }
+    .multilanguage h2 {
+        font-size: 28px;
+    }
+    .box h1 {
+        font-size: 28px;
+    }
+}
