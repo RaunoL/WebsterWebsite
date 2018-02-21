@@ -245,9 +245,14 @@ section styles
 .cart {
     background-color: #1791FF;
 }
-.smartpost, .omniva, .EEkuller, .EUkuller{
+
+.smartpost,
+.omniva,
+.EEkuller,
+.EUkuller {
     display: none;
 }
+
 /*
 elements
 */
@@ -430,9 +435,12 @@ elements
     width: 70vh;
     margin-right: -300px;
 }
-.cart, .data{
+
+.cart,
+.data {
     min-height: 100vh;
 }
+
 .error {
     display: none;
 }
@@ -521,7 +529,8 @@ elements
     padding: 20px;
     margin-bottom: 20px;
 }
-.cart .btn:hover{
+
+.cart .btn:hover {
     background-color: #1D47A8;
     border-color: #1791FF;
 }
@@ -593,13 +602,15 @@ elements
         margin: 30px 5%;
         font-size: 18px;
     }
-    .info-image3{
+    .info-image3 {
         margin-left: -15px;
     }
-}
-    .info-image2{
+
+
+    .info-image2 {
         margin-left: 15px;
     }
+
 }
 
 /* breakpoint 768px*/
@@ -629,7 +640,7 @@ elements
     .box h1 {
         font-size: 28px;
     }
-    .intro .btn{
+    .intro .btn {
         padding: 20px;
         font-size: 18px;
     }
