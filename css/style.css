@@ -593,8 +593,12 @@ elements
         margin: 30px 5%;
         font-size: 18px;
     }
-    .info-image2, .info-image3, .info-image4{
-        margin: 0 -15px;
+    .info-image3{
+        margin-left: -15px;
+    }
+}
+    .info-image2{
+        margin-left: 15px;
     }
 }
 
