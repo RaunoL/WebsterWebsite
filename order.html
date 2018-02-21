@@ -21,18 +21,321 @@
 <body>
     <section id="order">
         <div class="order">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6">
-                        <ul>
-                            <li>Tellimuse info</li>
-                            <li>Kohaletoimetamine</li>
-                            <li>Kontrolli ostukorvi</li>
-                        </ul>
-                        <h1>Tellija andmed</h1>
+                    <div class="col-lg-6 data">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-4"></div>
+                                <div class="col-lg-8">
+                                    <ul>
+                                        <li class="active">Tellimuse info</li>
+                                        <li>Kontrolli ostukorvi</li>
+                                    </ul>
+                                    <h2 class="heading-pad">Tellija andmed</h2>
+                                    <div class="blue-line"></div>
+                                    <div class="container-fluid ">
+
+                                        <div class="row">
+                                            <div class="col-md-6"><input type="text" name="firstname" placeholder='Eesnimi*'>
+                                                <div class="error firstname">
+                                                    <p>Palun sisestage siia eesnimi</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6"><input type="text" name="lastname" placeholder='perenimi*'>
+                                                <div class="error lastname">
+                                                    <p>Palun sisestage siia perenimi</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12"><input type="text" name="company" placeholder='ettevõte'>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6"><input type="text" name="email" placeholder='E-posti aadress*'>
+                                                <div class="error email">
+                                                    <p>Palun sisestage siia oma emaili aadress</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6"><input type="text" name="phone" placeholder='Telefoninumber*'>
+                                                <div class="error phone">
+                                                    <p>Palun sisestage siia oma telefoninumber</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2>Vali saatmisviis</h2>
+                                    <div class="blue-line"></div>
+                                    <div class="container-fluid">
+                                        <div class="delivery-options" id="delivery-options">
+                                            <div class="row">
+                                                <div class="col-xl-6"><button class="btn btn-round" onclick="deliver('smartpost')">SMARTPOST</button>
+                                                </div>
+                                                <div class="col-xl-6"><button class="btn btn-round" onclick="deliver('omniva')">OMNIVA</button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-6"><button class="btn btn-round" onclick="deliver('EEkuller')">EESTISISENE KULLER</button>
+                                                </div>
+
+                                                <div class="col-xl-6"><button class="btn btn-round" onclick="deliver('EUkuller')">EUROOPASISENE KULLER</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="smartpost" id="smartpost">
+                                            <button class="btn btn-round" onclick="deliver('delivery-options')">Muuda saatmisviisi</button>
+                                            <p>smartpost</p>
+                                            <select name="SPid" id="smartpost_select0"><optgroup label="Tallinn/Harjumaa"><option value="177">Saue Maxima</option><option value="183">Jüri Konsum</option><option value="199">Kärberi Selver</option><option value="134">Keila Selver</option><option value="205">Kuusalu Grossi Toidukaubad</option><option value="133">Laagri Maksimarket</option><option value="203">Laagri Selver</option><option value="207">Loo Gross</option><option value="161">Maardu Maxima</option><option value="178">Muuga Maxima</option><option value="179">Peetri Selver</option><option value="193">Priisle Maxima XXX</option><option value="174">Raudalu Konsum</option><option value="156">Saku Selver</option><option value="208">Balti Jaama Turg</option><option value="200">Stockmann</option><option value="180">Tabasalu Rimi</option><option value="121">Tallinna Haabersti Rimi</option><option value="126">Tallinna Järve Keskus</option><option value="185">Tallinna Kadaka Selver</option><option value="160">Tallinna Kaubamaja</option><option value="146">Tallinna Kristiine Keskus</option><option value="175">Tallinna Läänemere Selver</option><option value="120">Tallinna Lasnamäe Centrum (RIMI)</option><option value="103">Tallinna Lasnamäe Prisma</option><option value="164">Tallinna Magistrali Keskus</option><option value="206">Tallinna Marja Gross</option><option value="102">Tallinna Merimetsa Selver</option><option value="195">Tallinna Mustamäe Keskus</option><option value="138">Tallinna Mustika Prisma</option><option value="124">Tallinna Nõmme Keskus</option><option value="125">Tallinna Pirita Selver</option><option value="153">Tallinna Rocca Al Mare Keskus</option><option value="154">Tallinna Sikupilli Prisma</option><option value="141">Tallinna Smuuli Maxima</option><option value="155">Tallinna Solaris Keskus</option><option value="188">Tallinna Stroomi Keskus</option><option value="204">Tallinna Tähesaju Selver</option><option value="137">Tallinna Tondi Selver</option><option value="197">Tallinna Tööstuse RIMI</option><option value="122">Tallinna Torupilli Selver</option><option value="187">Tallinna Ülemiste keskus</option><option value="139">Viimsi Kaubanduskeskus</option><option value="192">Viimsi Selver</option><option value="194">Vilde tee Maxima XX</option></optgroup><optgroup label="Saaremaa"><option value="157">Kuressaare Kihelkonna mini-Rimi</option><option value="116">Kuressaare Saare Selver</option></optgroup><optgroup label="Jõgevamaa"><option value="123">Põltsamaa Selver</option><option value="111">Jõgeva Kaubahall</option><option value="202">Jõgeva Pae Konsum</option></optgroup><optgroup label="Hiiumaa"><option value="115">Kärdla Selver</option></optgroup><optgroup label="Ida-Virumaa"><option value="198">Ahtme Maxima</option><option value="131">Kohtla-Järve Vironia Keskus </option><option value="108">Jõhvi Tsentraal</option><option value="184">Jõhvi Grossi Toidukaubad</option><option value="140">Sillamäe SK-Market (Konsum)</option><option value="181">Narva Prisma</option><option value="109">Narva Astri Keskus</option></optgroup><optgroup label="Järvamaa"><option value="112">Paide Selver</option><option value="143">Türi mini-Rimi</option><option value="182">Paide Maksimarket</option></optgroup><optgroup label="Pärnumaa"><option value="130">Pärnu Keskus</option><option value="117">Pärnu Kaubamajakas</option><option value="189">Pärnu Mai Selver</option><option value="173">Pärnu Maksimarket</option><option value="158">Pärnu Maxima XXX</option><option value="127">Pärnu Ülejõe Selver</option><option value="142">Vändra Konsum</option></optgroup><optgroup label="Põlvamaa"><option value="128">Põlva Edu Keskus</option></optgroup><optgroup label="Lääne-Virumaa"><option value="152">Rakvere Põhjakeskus</option><option value="147">Tapa Bussijaam</option><option value="110">Rakvere Kroonikeskus</option></optgroup><optgroup label="Raplamaa"><option value="190">Rapla Selver</option><option value="113">Rapla Maxima</option><option value="145">Märjamaa mini-Rimi</option></optgroup><optgroup label="Tartumaa"><option value="210">Tartu Kvartal</option><option value="201">Tartu Kaubamaja   -1 korrus</option><option value="176">Tartu Kaubamaja 0 korrus</option><option value="150">Tartu Eeden</option><option value="106">Tartu Anne Selver</option><option value="171">Tartu Anne Prisma</option><option value="211">Tartu Anne Maxima</option><option value="172">Tartu Aardla Selver</option><option value="196">Tartu Veeriku Selver</option><option value="135">Tartu Tasku moe- ja vabaajakeskus</option><option value="169">Tartu Ringtee Selver</option><option value="136">Tartu Rebase Rimi</option><option value="163">Tartu Raadi Maxima</option><option value="107">Tartu Lõunakeskuse Rimi</option><option value="166">Tartu Lembitu Konsum</option><option value="144">Elva mini-Rimi</option><option value="209">Elva Maxima</option></optgroup><optgroup label="Läänemaa"><option value="114">Rannarootsi Keskus</option><option value="167">Haapsalu Rimi</option></optgroup><optgroup label="Valgamaa"><option value="148">Tõrva Maxima</option><option value="118">Valga Selver</option><option value="149">Otepää Maxima</option></optgroup><optgroup label="Viljandimaa"><option value="191">Viljandi Turu Konsum</option><option value="101">Viljandi Männimäe Selver</option><option value="162">Viljandi Uku keskus</option></optgroup><optgroup label="Võrumaa"><option value="119">Võru Kagukeskus</option><option value="168">Võru Rimi</option></optgroup></select>
+                                        </div>
+                                        <div class="omniva" id="omniva">
+                                            <button class="btn btn-round" onclick="deliver('delivery-options')">Muuda saatmisviisi</button>
+                                            <p>omniva</p>
+                                            <select id="omniva_select1" name="omniva_select1"><optgroup label="Harju maakond"><option value="96079">Jüri Konsumi pakiautomaat</option>
+<option value="96114">Kehra pakiautomaat</option>
+<option value="96049">Keila Rõõmu kaubamaja pakiautomaat</option>
+<option value="96096">Kose kaupluse pakiautomaat</option>
+<option value="96108">Kuusalu pakiautomaat</option>
+<option value="96067">Laagri Maksimarketi pakiautomaat</option>
+<option value="96134">Loksa Konsumi pakiautomaat</option>
+<option value="96081">Maardu Maxima XX pakiautomaat</option>
+<option value="96130">Maardu Pärli Keskuse pakiautomaat</option>
+<option value="96097">Paldiski Maxima X pakiautomaat</option>
+<option value="96082">Peetri Selveri pakiautomaat</option>
+<option value="96105">Raasiku pakiautomaat</option>
+<option value="96050">Saku Konsumi pakiautomaat</option>
+<option value="96055">Saue Kaubakeskuse pakiautomaat</option>
+<option value="96071">Tabasalu Rimi pakiautomaat</option>
+<option value="96003">Tallinna Akadeemia Konsumi pakiautomaat</option>
+<option value="96133">Tallinna Arsenali keskuse pakiautomaat</option>
+<option value="96001">Tallinna Balti Jaama pakiautomaat</option>
+<option value="96111">Tallinna Haabersti RIMI pakiautomaat</option>
+<option value="96016">Tallinna Järve Keskuse pakiautomaat</option>
+<option value="96138">Tallinna Järveotsa Grossi pakiautomaat</option>
+<option value="96018">Tallinna Kadaka Selveri pakiautomaat</option>
+<option value="96015">Tallinna Kakumäe Selveri pakiautomaat</option>
+<option value="96007">Tallinna Kristiine Keskuse pakiautomaat</option>
+<option value="96135">Tallinna Lasnamäe Centrumi 2 pakiautomaat</option>
+<option value="96041">Tallinna Lasnamäe Centrumi pakiautomaat</option>
+<option value="96066">Tallinna Lasnamäe Prisma pakiautomaat</option>
+<option value="96080">Tallinna Lauluväljaku Maxima pakiautomaat</option>
+<option value="96116">Tallinna Linnamäe Maxima XXX pakiautomaat</option>
+<option value="96086">Tallinna Magdaleena pakiautomaat</option>
+<option value="96056">Tallinna Magistrali Keskuse pakiautomaat</option>
+<option value="96098">Tallinna Marienthali keskuse pakiautomaat</option>
+<option value="96129">Tallinna Merimetsa Selveri pakiautomaa</option>
+<option value="96010">Tallinna Mustakivi keskuse pakiautomaat</option>
+<option value="96141">Tallinna Mustamäe Keskuse pakiautomaat</option>
+<option value="96115">Tallinna Mustika keskus pakiautomaat</option>
+<option value="96004">Tallinna Nurmenuku pakiautomaat</option>
+<option value="96101">Tallinna Nõmme turu pakiautomaat</option>
+<option value="96131">Tallinna Paepargi Maxima XX pakiautomaat</option>
+<option value="96017">Tallinna Pelgulinna Selveri pakiautomaat</option>
+<option value="96012">Tallinna Pirita Selveri pakiautomaat</option>
+<option value="96083">Tallinna Punase Selveri pakiautomaat</option>
+<option value="96008">Tallinna Pääsküla RIMI pakiautomaat</option>
+<option value="96084">Tallinna Raudalu Konsumi pakiautomaat</option>
+<option value="96005">Tallinna Rocca al Mare pakiautomaat</option>
+<option value="96009">Tallinna Sikupilli Prisma pakiautomaat</option>
+<option value="96057">Tallinna Stockmanni pakiautomaat</option>
+<option value="96069">Tallinna Sõle Säästumarketi pakiautomaat</option>
+<option value="96014">Tallinna Sõpruse Rimi pakiautomaat</option>
+<option value="96058">Tallinna Telliskivi Rimi pakiautomaat</option>
+<option value="96006">Tallinna Tondi Selveri pakiautomaat</option>
+<option value="96038">Tallinna Torupilli Selveri pakiautomaat</option>
+<option value="96132">Tallinna Valdeku CoMarketi pakiautomaat</option>
+<option value="96002">Tallinna Viru Keskuse pakiautomaat</option>
+<option value="96104">Tallinna Viru bussiterminali pakiautomaat</option>
+<option value="96103">Tallinna Õismäe Maxima XX pakiautomaat</option>
+<option value="96113">Tallinna Ülemiste keskuse pakiautomaat</option>
+<option value="96059">Tallinna Ümera Maxima pakiautomaat</option>
+<option value="96013">Viimsi Kaubanduskeskuse pakiautomaat</option>
+<option value="96124">Viimsi Pärnamäe Rimi pakiautomaat</option>
+</optgroup><optgroup label="Hiiu maakond"><option value="96046">Kärdla Konsumi pakiautomaat</option>
+</optgroup><optgroup label="Ida-Viru maakond"><option value="96030">Jõhvi Jewe kaubanduskeskuse pakiautomaat</option>
+<option value="96089">Jõhvi Maxima pakiautomaat</option>
+<option value="96090">Kiviõli Maxima pakiautomaat</option>
+<option value="96123">Kohtla-Järve Ahtme Maxima pakiautomaat</option>
+<option value="96036">Kohtla-Järve Säästumarketi pakiautomaat</option>
+<option value="96093">Kohtla-Järve Vironia keskuse pakiautomaat</option>
+<option value="96028">Narva Astri keskuse pakiautomaat</option>
+<option value="96072">Narva Fama keskuse pakiautomaat</option>
+<option value="96091">Narva Kreenholmi Maxima XX pakiautomaat</option>
+<option value="96125">Narva Prisma pakiautomaat</option>
+<option value="96054">Sillamäe pakiautomaat</option>
+</optgroup><optgroup label="Järva maakond"><option value="96037">Paide Selveri pakiautomaat</option>
+<option value="96052">Türi Maxima pakiautomaat</option>
+</optgroup><optgroup label="Jõgeva maakond"><option value="96044">Jõgeva Konsumi pakiautomaat</option>
+<option value="96048">Põltsamaa Selveri pakiautomaat</option>
+<option value="96121">Torma A ja O pakiautomaat</option>
+</optgroup><optgroup label="Lääne maakond"><option value="96128">Haapsalu Kastani pakiautomaat</option>
+<option value="96033">Haapsalu Konsumi pakiautomaat</option>
+</optgroup><optgroup label="Lääne-Viru maakond"><option value="96117">Kadrina Konsum pakiautomaat</option>
+<option value="96122">Kunda Konsumi pakiautomaat</option>
+<option value="96078">Rakvere Põhjakeskuse pakiautomaat</option>
+<option value="96031">Rakvere Turutare pakiautomaat</option>
+<option value="96120">Tamsalu Grossi pakiautomaat</option>
+<option value="96092">Tapa Grossi pakiautomaat</option>
+<option value="96107">Väike-Maarja pakiautomaat</option>
+</optgroup><optgroup label="Pärnu maakond"><option value="96119">Lihula Konsum pakiautomaat</option>
+<option value="96026">Pärnu Jannseni Rimi pakiautomaat</option>
+<option value="96040">Pärnu Kaubamajaka pakiautomaat</option>
+<option value="96076">Pärnu Maksimarketi pakiautomaat</option>
+<option value="96027">Pärnu Maxima pakiautomaat</option>
+<option value="96062">Pärnu Port Artur 2 pakiautomaat</option>
+<option value="96077">Pärnu Ülejõe Selveri pakiautomaat</option>
+<option value="96109">Pärnu-Jaagupi pakiautomaat</option>
+</optgroup><optgroup label="Põlva maakond"><option value="96045">Põlva Kaubamaja pakiautomaat</option>
+<option value="96073">Põlva Selveri pakiautomaat</option>
+<option value="96095">Räpina Maxima pakiautomaat</option>
+</optgroup><optgroup label="Rapla maakond"><option value="96094">Kohila Konsumi pakiautomaat</option>
+<option value="96051">Märjamaa Maxima pakiautomaat</option>
+<option value="96043">Rapla Maxima pakiautomaat</option>
+</optgroup><optgroup label="Saare maakond"><option value="96034">Kuressaare Maxima XX pakiautomaat</option>
+<option value="96065">Kuressaare Smuuli pakiautomaat</option>
+<option value="96106">Orissaare pakiautomaat</option>
+</optgroup><optgroup label="Tartu maakond"><option value="96047">Elva Konsumi pakiautomaat</option>
+<option value="96126">Tartu Anne Selveri pakiautomaat</option>
+<option value="96020">Tartu Eedeni pakiautomaat</option>
+<option value="96061">Tartu Kesklinna Keskuse pakiautomaat</option>
+<option value="96068">Tartu Kivilinna pakiautomaat</option>
+<option value="96074">Tartu Lembitu Konsumi pakiautomaat</option>
+<option value="96019">Tartu Lõunakeskuse pakiautomaat</option>
+<option value="96127">Tartu Raadi Maxima pakiautomaat</option>
+<option value="96087">Tartu Rebase Rimi pakiautomaat</option>
+<option value="96088">Tartu Ringtee Selveri pakiautomaat</option>
+<option value="96021">Tartu Sõbrakeskuse pakiautomaat</option>
+<option value="96039">Tartu Tasku Keskuse pakiautomaat</option>
+<option value="96022">Tartu Ujula Konsumi pakiautomaat</option>
+<option value="96060">Tartu Veeriku Selveri pakiautomaat</option>
+</optgroup><optgroup label="Valga maakond"><option value="96053">Tõrva Maxima pakiautomaat</option>
+<option value="96042">Valga Maxima pakiautomaat</option>
+</optgroup><optgroup label="Viljandi maakond"><option value="96110">Karksi-Nuia pakiautomaat</option>
+<option value="96032">Viljandi Bussijaama pakiautomaat</option>
+<option value="96070">Viljandi Maksimarketi pakiautomaat</option>
+<option value="96063">Viljandi Männimäe Selveri pakiautomaat</option>
+</optgroup><optgroup label="Võru maakond"><option value="96118">Antsla Konsum pakiautomaat</option>
+<option value="96035">Võru Maksimarketi pakiautomaat</option>
+<option value="96064">Võru Maxima pakiautomaat</option>
+</optgroup></select>
+                                        </div>
+                                        <div class="EEkuller" id="EEkuller">
+                                            <button class="btn btn-round" onclick="deliver('delivery-options')">Muuda saatmisviisi</button>
+                                            <p>Eestisisene kuller</p>
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <input type="text" name="addressEE" placeholder='Aadress*'>
+                                                        <div class="error addressEE">
+                                                            <p>Palun sisestage siia oma aadress</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <input type="text" name="cityEE" placeholder='Linn*'>
+                                                        <div class="error cityEE">
+                                                            <p>Palun sisestage siia oma linn</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <input type="text" name="postalCodeEE" placeholder='Postiindeks*'>
+                                                        <div class="error postalCodeEE">
+                                                            <p>Palun sisestage siia oma postiindeks</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="EUkuller" id="EUkuller">
+                                            <button class="btn btn-round" onclick="deliver('delivery-options')">Muuda saatmisviisi</button>
+                                            <p>Euroopasisene kuller</p>
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <input type="text" name="addressEU" placeholder='Aadress*'>
+                                                        <div class="error addressEU">
+                                                            <p>Palun sisestage siia oma aadress</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <input type="text" name="cityEU" placeholder='Linn*'>
+                                                        <div class="error cityEU">
+                                                            <p>Palun sisestage siia oma linn</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <input type="text" name="postalCodeEU" placeholder='Postiindeks*'>
+                                                        <div class="error postalCodeEU">
+                                                            <p>Palun sisestage siia oma postiindeks</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <input type="text" name="country" placeholder='Riik*'>
+                                                        <div class="error country">
+                                                            <p>Palun sisestage siia oma riik</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <h1>Ostukorv</h1>
+                    <div class="col-lg-6 cart">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <h2 class="heading-pad">Ostukorv</h2>
+                                    <div class="white-line-order"></div>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-3"><img src="img/karp-front-eng.png" class="img-fluid img-rounded">
+                                            </div>
+                                            <div class="col-md-5">
+                                                <p><strong>Toode:</strong><br>Magusad Küsimused mäng eesti keeles</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <span class="input-number-decrement"><i class="fas fa-angle-left"></i></span><input class="input-number input-number-ee" type="text" value="0" min="0" max="999" id="quantityEE"><span class="input-number-increment"><i class="fas fa-angle-right"></i></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="white-line-order"></div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <img src="img/karp-front-eng.png" class="img-fluid img-rounded">
+                                            </div>
+                                            <div class="col-md-5">
+                                                <p><strong>Toode:</strong><br>Magusad Küsimused mäng inglise keeles</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <span class="input-number-decrement"><i class="fas fa-angle-left"></i></span><input class="input-number input-number-en" type="text" value="0" min="0" max="999" id="quantityEN"><span class="input-number-increment"><i class="fas fa-angle-right"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="white-line-order"></div>
+                                        <button class="btn btn-round">Edasi</button>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -43,3 +346,4 @@
 <script src="js/include.js"></script>
 
 </html>
+<!--                                    <button class="btn btn-round">SMARTPOST</button>-->

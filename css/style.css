@@ -10,7 +10,7 @@ Navigation
 ul {
     list-style: none;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 60px;
     position: absolute;
 }
 
@@ -163,13 +163,19 @@ strong {
 .data h2 {
     color: #1791FF;
     font-size: 64px;
-    padding-top: 200px;
+
 }
 
 .cart h2 {
     color: #ffffff;
     font-size: 64px;
-    padding-top: 200px;
+
+}
+
+.cart p {
+    color: #ffffff;
+    font-size: 18px;
+
 }
 
 /*
@@ -228,14 +234,20 @@ section styles
     height: 100vh;
     width: 100%;
     text-align: left;
-    background-image: url(img/orderBG.svg);
 }
 
 .gallery .col-md-6 {
     padding: 0;
 }
 
+.data {}
 
+.cart {
+    background-color: #1791FF;
+}
+.smartpost, .omniva, .EEkuller, .EUkuller{
+    display: none;
+}
 /*
 elements
 */
@@ -258,6 +270,16 @@ elements
 
 .blue-line {
     border-top: 2px solid #1791FF;
+    height: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.white-line-order {
+    border-top: 2px solid #ffffff;
     height: 10px;
     width: 100%;
     text-align: center;
@@ -407,6 +429,101 @@ elements
 .multilang-est {
     width: 70vh;
     margin-right: -300px;
+}
+.cart, .data{
+    min-height: 100vh;
+}
+.error {
+    display: none;
+}
+
+.data input {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    ;
+
+}
+
+.data input:focus {
+    outline: none;
+    border-color: #1791FF;
+}
+
+.data .btn {
+    color: #ffffff;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1791FF;
+    padding: 18px 0;
+    width: 100%;
+    margin: 20px;
+}
+
+.data .btn:hover {
+    background-color: #1D47A8;
+}
+
+.input-number {
+    width: 60%;
+    vertical-align: top;
+    text-align: center;
+    outline: none;
+}
+
+.input-number,
+.input-number-decrement,
+.input-number-increment {
+
+    border: 1px solid #1D47A7;
+    height: 40px;
+    user-select: none;
+    font-family: 'gilroy';
+    background-color: #1D47A7;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.input-number-decrement,
+.input-number-increment {
+    display: inline-block;
+    width: 20%;
+    line-height: 38px;
+    background: #1D47A7;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-number-decrement {
+    border-right: none;
+    border-radius: 15px 0 0 15px;
+}
+
+.input-number-increment {
+    border-left: none;
+    border-radius: 0 15px 15px 0;
+}
+
+.cart .btn {
+    color: #ffffff;
+    font-family: 'Gilroy';
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #1791FF;
+    border-color: #ffffff;
+    border-width: 3px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.cart .btn:hover{
+    background-color: #1D47A8;
+    border-color: #1791FF;
 }
 
 /* Responsive stuff*/
