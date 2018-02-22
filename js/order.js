@@ -128,7 +128,7 @@ function validate() {
     } else {
         document.getElementById('quantity-error').style.display = 'none';
     }
-    window.location.href = 'rauno.kajida.uk/confirm.html';
+    window.location.href = '/confirm.html';
 
 
     
