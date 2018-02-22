@@ -118,15 +118,5 @@ inputNumber($('.input-number-ee'));
 
 inputNumber($('.input-number-en'));
 
-function deliver(option){
-    console.log(option);
-    document.getElementById('delivery-options').style.display='none';
-    document.getElementById('smartpost').style.display='none';
-    document.getElementById('omniva').style.display='none';
-    document.getElementById('EEkuller').style.display='none';
-    document.getElementById('EUkuller').style.display='none';
-    document.getElementById(option).style.display='block';
-}
-
 
 
