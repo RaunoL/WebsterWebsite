@@ -128,8 +128,15 @@ function validate() {
     } else {
         document.getElementById('quantity-error').style.display = 'none';
     }
-    window.location.href = '/confirm.html?'+'firstname=' firstname + '&lastname='lastname+ '&company='company+ '&email='email+ '&phone='phone+ '&method='method+ '&address='address;
+    window.location.href = '/confirm.html?' + 'firstname=' +
+        firstname + '&lastname=' +
+        lastname + '&company=' +
+        company + '&email=' +
+        email + '&phone=' +
+        phone + '&method=' +
+        method + '&address=' +
+        address;
 
 
-    
+
 }
