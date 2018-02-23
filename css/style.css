@@ -17,8 +17,7 @@ ul {
 ul li {
     float: left;
     padding: 8px;
-    font-family: 'Gilroy';
-    font-weight: lighter;
+    font-family: 'gilroylight';
     font-size: 15px;
 }
 
@@ -36,13 +35,11 @@ H3,
 H4,
 H5,
 H6 {
-    font-family: 'Gilroy';
-    font-weight: bold;
+    font-family: 'gilroyextrabold';
 }
 
 p {
-    font-family: 'Gilroy';
-    font-weight: lighter;
+    font-family: 'gilroylight';
     font-size: 24px;
 }
 
@@ -300,9 +297,8 @@ elements
 
 .hero-text .btn {
     color: #ffffff;
-    font-family: 'Gilroy';
+    font-family: 'gilroyextrabold';
     font-size: 24px;
-    font-weight: bold;
     background-color: #1791FF;
     border-color: #ffffff;
     border-width: 3px;
@@ -318,9 +314,8 @@ elements
 
 .intro .btn {
     color: #ffffff !important;
-    font-family: 'Gilroy';
+    font-family: 'gilroyextrabold';
     font-size: 24px;
-    font-weight: bold;
     background-color: #1791FF;
     padding: 20px 30px 20px 80px;
     margin-top: 120px;
@@ -336,9 +331,8 @@ elements
 
 .info .btn {
     color: #ffffff !important;
-    font-family: 'Gilroy';
+    font-family: 'gilroyextrabold';
     font-size: 18px;
-    font-weight: bold;
     background-color: #1791FF;
     border-color: #ffffff;
     border-width: 3px;
@@ -378,9 +372,8 @@ elements
 
 .multilanguage .btn {
     color: #ffffff !important;
-    font-family: 'Gilroy';
+    font-family: 'gilroyextrabold';
     font-size: 18px;
-    font-weight: bold;
     background-color: #1791FF;
     border-width: 3px;
     border-color: #1791FF;
@@ -407,9 +400,8 @@ elements
 
 .box .btn {
     color: #ffffff !important;
-    font-family: 'Gilroy';
+    font-family: 'gilroyextrabold';
     font-size: 24px;
-    font-weight: bold;
     background-color: #1791FF;
     border-width: 3px;
     border-color: #1791FF;
@@ -466,9 +458,8 @@ elements
 
 .data .btn {
     color: #ffffff;
-    font-family: 'Gilroy';
+    font-family: 'gilroyextrabold';
     font-size: 18px;
-    font-weight: bold;
     background-color: #1791FF;
     padding: 18px 0;
     width: 100%;
@@ -493,7 +484,7 @@ elements
     border: 1px solid #1D47A7;
     height: 40px;
     user-select: none;
-    font-family: 'gilroy';
+    font-family: 'gilroyextrabold';
     background-color: #1D47A7;
     color: #ffffff;
     font-weight: bold;
@@ -522,9 +513,8 @@ elements
 
 .cart .btn {
     color: #ffffff;
-    font-family: 'Gilroy';
+    font-family: 'gilroyextrabold';
     font-size: 24px;
-    font-weight: bold;
     background-color: #1791FF;
     border-color: #ffffff;
     border-width: 3px;
@@ -570,8 +560,7 @@ elements
         padding: 0;
     }
     .info .btn {
-        width: 80%;
-        margin: 30px 10%;
+        margin: 10px 0;
     }
     .how-to-play H1 {
         font-size: 48px;
