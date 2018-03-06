@@ -175,6 +175,9 @@ strong {
 
 }
 
+.cart h4{
+    color: #fff;
+}
 /*
 section styles 
 */
@@ -252,7 +255,12 @@ section styles
 .EUkuller {
     display: none;
 }
-
+.product-preview{
+    text-align: center;
+}
+.product-preview h4{
+    color: #fff;
+}
 /*
 elements
 */
@@ -508,12 +516,12 @@ elements
 .input-number-decrement,
 .input-number-increment {
 
-    border: 1px solid #1D47A7;
+    border: 1px solid #fff;
     height: 40px;
     user-select: none;
     font-family: 'gilroyextrabold';
-    background-color: #1D47A7;
-    color: #ffffff;
+    background-color: #fff;
+    color: #1D47A7;
     font-weight: bold;
 }
 
@@ -522,7 +530,7 @@ elements
     display: inline-block;
     width: 20%;
     line-height: 38px;
-    background: #1D47A7;
+    background: #fff;
     text-align: center;
     font-weight: bold;
     cursor: pointer;
@@ -559,6 +567,28 @@ elements
 }
 .flex-center{
     align-items: center;
+}
+.product-preview{
+    background-color: #4D7FE2;
+    padding: 20px;
+    border-radius: 10px;
+}
+#smartpost_select0, #omniva_select1{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+.product-preview .quantity{
+    display: inline-block;
+    padding: 10px 0;
+    color: #fff !important;
+    font-family: 'gilroyextrabold';
+    font-size: 24px;
+    width: 70%;
+    border: 1px solid white;
 }
 /* Responsive stuff*/
 
