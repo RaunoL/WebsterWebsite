@@ -23,6 +23,9 @@ var method = getQueryVariable('method');
 var address =  getQueryVariable('address');
 var quantityEE = getQueryVariable('quantityEE');
 var quantityEN = getQueryVariable('quantityEN');
+var price = '';
+var games = '';
+var transport = '';
 
 $( document ).ready(function() {
     console.log( "ready!" );
@@ -39,12 +42,12 @@ $( document ).ready(function() {
 });
 
 function priceCalculation() {
-    var price = '';
+    price = ''
     var MKEE = parseFloat(document.getElementById('quantityEE').innerHTML);
     var MKEN = parseFloat(document.getElementById('quantityEN').innerHTML);
     var quantity = MKEE + MKEN;
-    var games = '';
-    var transport = '';
+    games = '';
+    transport = '';
     if (quantity > 1000) {
         price = quantity * 6.35;
     } else if (quantity > 500) {
