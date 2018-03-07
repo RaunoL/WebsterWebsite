@@ -17,7 +17,7 @@ $quantityEE = strip_tags(htmlspecialchars($_POST['quantityEE']));
 $quantityEN = strip_tags(htmlspecialchars($_POST['quantityEN']));
 $transport = strip_tags(htmlspecialchars($_POST['transport']));
 $games = strip_tags(htmlspecialchars($_POST['games']));
-echo $firstname;
+echo 'reach';
     //, '$lastname', '$email_address', '$phone', '$method', '$address', '$quantityEE', '$quantityEN', '$transport', '$games', 'invoiceID';
 // Create the email and send the message
 
