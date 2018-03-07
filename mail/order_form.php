@@ -1,12 +1,12 @@
 <?php
 
-if(empty($_POST['name'])      ||
+/*if(empty($_POST['name'])      ||
    empty($_POST['email'])     ||
    empty($_POST['phone'])     ||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
    return false;
-   }
+   }*/
 $firstname = strip_tags(htmlspecialchars($_POST['firstname']));
 $lastname = strip_tags(htmlspecialchars($_POST['lastname']));
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
@@ -17,8 +17,7 @@ $quantityEE = strip_tags(htmlspecialchars($_POST['quantityEE']));
 $quantityEN = strip_tags(htmlspecialchars($_POST['quantityEN']));
 $transport = strip_tags(htmlspecialchars($_POST['transport']));
 $games = strip_tags(htmlspecialchars($_POST['games']));
-echo 'reach';
-    //, '$lastname', '$email_address', '$phone', '$method', '$address', '$quantityEE', '$quantityEN', '$transport', '$games', 'invoiceID';
+echo '$firstname', '$lastname', '$email_address', '$phone', '$method', '$address', '$quantityEE', '$quantityEN', '$transport', '$games', 'invoiceID';
 // Create the email and send the message
 
 
