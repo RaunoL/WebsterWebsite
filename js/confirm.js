@@ -8,7 +8,7 @@ function getQueryVariable(variable) {
     for (var i = 0; i < vars.length; i++) {
         var pair = vars[i].split("=");
         if (pair[0] == variable) {
-            return pair[1];
+            return decodeURI(pair[1]);
         }
     }
     return (false);
@@ -20,7 +20,7 @@ var company = getQueryVariable('company');
 var email = getQueryVariable('email');
 var phone = getQueryVariable('phone');
 var method = getQueryVariable('method');
-var address =  decodeURI(getQueryVariable('address'));
+var address =  getQueryVariable('address');
 var quantityEE = getQueryVariable('quantityEE');
 var quantityEN = getQueryVariable('quantityEN');
 
@@ -43,6 +43,7 @@ function priceCalculation() {
     var MKEE = parseFloat(document.getElementById('quantityEE').innerHTML);
     var MKEN = parseFloat(document.getElementById('quantityEN').innerHTML);
     var quantity = MKEE + MKEN;
+    var games = '';
     var transport = '';
     if (quantity > 1000) {
         price = quantity * 6.35;
@@ -57,6 +58,7 @@ function priceCalculation() {
     } else if (quantity < 1000) {
         price = quantity * 14.4;
     }
+    games = price;
     document.getElementById('MKPrice').innerHTML = Math.round(price * 100) / 100 + '€';
     if (quantity == 1) {
         transport = 1.26;
@@ -158,3 +160,34 @@ function priceCalculation() {
     document.getElementById('sum').innerHTML = Math.round(price * 100) / 100 + '€';
 
 }
+
+$("#orderButton").click(function () {
+    event.preventDefault(); // prevent default submit behaviour
+
+    $.ajax({
+        url: "../mail/order_form.php",
+        type: "POST",
+        data: {
+            firstname: firstname,
+            lastname: lastname,
+            company: company,
+            email: email,
+            phone: phone,
+            method: method,
+            address: address,
+            quantityEE: quantityEE,
+            quantityEN: quantityEN,
+            price: price,
+            transport: transport,
+            games: games
+        },
+        success: function (data) {
+            //document.location.href = data;
+            console.log(data);
+        }
+    });
+
+
+
+
+});
